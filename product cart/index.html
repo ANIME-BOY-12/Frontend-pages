@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <title>Product List</title>
+    <style>
+        body{
+            display: flex;
+            padding: 78px;
+            padding-top: 50px;
+            gap: 25px;
+            font-family: "Red Hat Text", sans-serif;
+            background-color: hsl(13, 31%, 94%);
+            flex-wrap: wrap;
+        }
+        .mainbox1{
+            width: 800px;
+        }
+        .realbox{
+            display: flex;
+            width: 800px;
+            flex-wrap: wrap;
+            gap: 36px;
+            row-gap: 15px;
+        }
+        .box{
+            width: 240px;
+            height: 326px;
+        }
+        .box>img{
+            width: 240px;
+            border-radius: 10px;
+        }
+        .box button{
+            padding: 5px;
+            width: 150px;
+            position: relative;
+            left: 46px;
+            top: -24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .subbox1{
+            position: relative;
+            top: -10px;
+        }
+        .p1{
+            font-size: 12px;
+            color: hsl(12, 20%, 44%);
+            margin: 0px;
+        }
+        .p2{
+            font-weight: 600;
+            margin: 0px;
+        }
+        .p3{
+            color: hsl(14, 86%, 42%) ;
+            font-weight: 700;
+            margin: 0px;
+
+        }
+        .mainbox2{
+            background-color: yellowgreen;
+            width: 300px;
+            background-color: white;
+            height: 220px;
+            padding: 25px;
+            border-radius: 15px;
+        }
+        .mainbox2 h2{
+            color:hsl(14, 86%, 42%) ;
+            margin-top: 0px;
+        }
+        .subbox{
+            text-align: center;
+        }
+        .subbox p{
+            color: hsl(12, 20%, 44%);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox1">
+        <h1>Desserts</h1>
+        <div class="realbox">
+            <div class="box box1">
+                <img src="./product-list-with-cart-main/assets/images/image-waffle-desktop.jpg" alt="" class="img1">
+                <button>
+                    <img src="./product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="" class="cart">
+                    Add to Cart
+                </button>
+                <div class="subbox1">
+                    <p class="p1">Waffle</p>
+                    <p class="p2">Waffle with berrries</p>
+                    <p class="p3">$6.50</p>
+                </div>
+            </div>
+            <div class="box box2">
+                <img src="./product-list-with-cart-main/assets/images/image-creme-brulee-desktop.jpg" alt="" class="img1">
+                <button>
+                    <img src="./product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="" class="cart">
+                    Add to Cart
+                </button>
+                <div class="subbox1">
+                    <p class="p1">Creme Brulee</p>
+                    <p class="p2">Vanilla Bean Creme Brulee</p>
+                    <p class="p3">$7.00</p>
+                </div>
+            </div>
+            <div class="box box3">
+                <img src="./product-list-with-cart-main/assets/images/image-macaron-desktop.jpg" alt="" class="img1">
+                <button>
+                    <img src="./product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="" class="cart">
+                    Add to Cart
+                </button>
+                <div class="subbox1">
+                    <p class="p1">Macaron</p>
+                    <p class="p2">Macaron Mix of Five</p>
+                    <p class="p3">$8.00</p>
+                </div>
+            </div>
+            <div class="box box4">
+                <img src="./product-list-with-cart-main/assets/images/image-tiramisu-desktop.jpg" alt="" class="img1">
+                <button>
+                    <img src="./product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="" class="cart">
+                    Add to Cart
+                </button>
+                <div class="subbox1">
+                    <p class="p1">Tiramisu</p>
+                    <p class="p2">Classic Tiramisu</p>
+                    <p class="p3">$5.50</p>
+                </div>
+            </div>
+            <div class="box box5">
+                <img src="./product-list-with-cart-main/assets/images/image-baklava-desktop.jpg" alt="" class="img1">
+                <button>
+                    <img src="./product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="" class="cart">
+                    Add to Cart
+                </button>
+                <div class="subbox1">
+                    <p class="p1">baklava</p>
+                    <p class="p2">Pistachio Baklava</p>
+                    <p class="p3">$4.00</p>
+                </div>
+            </div>
+            <div class="box box6">
+                <img src="./product-list-with-cart-main/assets/images/image-waffle-desktop.jpg" alt="" class="img1">
+                <button>
+                    <img src="./product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="" class="cart">
+                    Add to Cart
+                </button>
+                <div class="subbox1">
+                    <p class="p1">Pie</p>
+                    <p class="p2">Lemon Meringue Pie</p>
+                    <p class="p3">$5.00</p>
+                </div>
+            </div>
+            <div class="box box7">
+                <img src="./product-list-with-cart-main/assets/images/image-cake-desktop.jpg" alt="" class="img1">
+                <button>
+                    <img src="./product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="" class="cart">
+                    Add to Cart
+                </button>
+                <div class="subbox1">
+                    <p class="p1">Cake</p>
+                    <p class="p2">Red Velvet Cake</p>
+                    <p class="p3">$4.50</p>
+                </div>
+            </div>
+            <div class="box box8">
+                <img src="./product-list-with-cart-main/assets/images/image-brownie-desktop.jpg" alt="" class="img1">
+                <button>
+                    <img src="./product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="" class="cart">
+                    Add to Cart
+                </button>
+                <div class="subbox1">
+                    <p class="p1">Brownie</p>
+                    <p class="p2">Salted Caramel Brownie</p>
+                    <p class="p3">$5.50</p>
+                </div>
+            </div>
+            <div class="box box9">
+                <img src="./product-list-with-cart-main/assets/images/image-panna-cotta-desktop.jpg" alt="" class="img1">
+                <button>
+                    <img src="./product-list-with-cart-main/assets/images/icon-add-to-cart.svg" alt="" class="cart">
+                    Add to Cart
+                </button>
+                <div class="subbox1">
+                    <p class="p1">Panna Cotta</p>
+                    <p class="p2">Vanilla Panna Cotta</p>
+                    <p class="p3">$6.50</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainbox2">
+        <h2>Your Cart(0)</h2>
+        <div class="subbox">
+            <img src="./product-list-with-cart-main/assets/images/illustration-empty-cart.svg" alt="">
+            <p>Your added item will appear here</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- <h2>how to make box move to next line when screen size gets small</h2> -->
+
+
+
+

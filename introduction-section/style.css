@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    /* display: flex;
+    justify-content: center; */
+    font-family: "Epilogue", sans-serif;
+}
+.container{
+    width: 375px;
+}
+.mobile-design{
+    width: 375px;
+    padding: 20px 0px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.nav button{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.navbar-toogle-btn{
+    background-color: transparent;
+    border: none;
+}
+
+.description{
+    text-align: center;
+}
+.description h1{
+    font-size: 39.3px;
+    color: hsl(0, 0%, 8%);
+    padding:15px 0px ;
+}
+.description p{
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+    line-height: 26px;
+}
+.description button{
+    width: 160px;
+    height: 45px;
+    border-radius: 15px;
+    font-weight: 600;
+    margin-top: 15px;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+}
+footer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-inline: 15px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+footer img{
+    width: 81px;
+    height: auto;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.login-btn{
+    border: none;
+}
+
+@media (width<375px){
+    nav , .login-btn , .register-btn{
+        display: none;
+    }
+}
+@media(375px <= width <= 888px){
+    nav , .login-btn , .register-btn{
+        display: none;
+    }
+    .container{
+        width: auto;
+    }
+    .mobile-design{
+        width: 100%;
+        max-width: 600px;
+    }
+    .description{
+        max-width: 600px;
+    }
+    .box1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media (888px < width){
+    
+    .navbar-toogle-btn{
+        display: none;
+    }
+
+    .container{
+        width: auto;
+        padding: 40px;
+    }
+
+    .nav-box{
+        width: 80%;
+        display: flex;
+        gap: 35px;
+        align-items: center;
+    }
+
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 35px;
+        justify-content: space-between;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .box1{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .mobile-design{
+        width: clamp(250px ,35vw ,450px);
+        order: 2;
+    }
+
+    .box2{
+        width: 500px;
+        order: 1;
+    }
+
+    .box2 h1{
+        font-size: 60px;
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+    .box2 button{
+        margin-top:40px ;
+        margin-bottom: 80px;
+    }
+
+    footer{
+        justify-content: center;
+        gap: 20px;
+    }
+
+    footer img{
+        justify-content: center;
+        width: 110px;
+    }
+    /* 
+    
+    button{
+        width: 20%;
+    }
+
+   
+    
+    
+    
+    */
+} 

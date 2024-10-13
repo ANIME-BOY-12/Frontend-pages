@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: start;
+            align-items: end;
+        }
+        @keyframes animation1{
+            0%{
+                transform: translate(0px , 0px);
+            }
+            25%{
+                transform: translate(23vw , -20vw);
+            }
+            50%{
+                transform: translate(44vw , 0vw);
+            }
+            75%{
+                transform: translate(67vw , -20vw);
+            }
+            100%{
+                transform: translate(90vw , 0vw);
+            }
+        }
+        .box{
+            background-color: springgreen;
+            color: black;
+            width: 10vw;
+            height: 10vw;
+            border-radius: 100%;
+            text-align: center;
+            animation-name: animation1;
+            animation-duration: 6s;
+            animation-delay: 0s;
+            animation-timing-function: cubic-bezier(0.24, 0.12, 0.81, 0.98);
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        </div>
+    </div>
+</body>
+</html>
